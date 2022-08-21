@@ -1,7 +1,7 @@
 .nar_container {
     width: 100vw;
     height: 100vh;
-    min-width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     background: var(--color1);
@@ -41,6 +41,7 @@
 .nar_examples h1 {
     color: var(--color3);
     margin: 40px 0px 20px 0px;
+    text-align: center;
 }
 
 .examples li {

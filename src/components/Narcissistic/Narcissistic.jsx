@@ -30,10 +30,10 @@ const Narcissistic = () => {
                 <div className="nar_examples">
                     <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .6 }}>Examples</motion.h1>
                     <div className="examples">
-                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>153</motion.li>
-                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>370</motion.li>
-                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>371</motion.li>
-                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>407</motion.li>
+                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>153 = 1³ + 5³ + 3³</motion.li>
+                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>370 = 3³ + 7³ + 0³</motion.li>
+                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>371 = 3³ + 7³ + 1³</motion.li>
+                        <motion.li initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }}>407 = 4³ + 0³ + 7³</motion.li>
                     </div>
                 </div>
                 <div className="nar_calculator">
