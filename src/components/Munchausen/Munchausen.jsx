@@ -23,23 +23,23 @@ const Munchausen = () => {
         <div className="mun_container">
             <div className="mun_content">
                 <div className="mun_description">
-                    <motion.h1 initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .2 }}>Munchausen Numbers</motion.h1>
-                    <motion.p initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .4 }}>A number that is equal to the sum of its digits each raised to the power of itself</motion.p>
+                    <motion.h1 initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .1 }}>Munchausen Numbers</motion.h1>
+                    <motion.p initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .2 }}>A number that is equal to the sum of its digits each raised to the power of itself</motion.p>
                 </div>
                 <div className="mun_examples">
-                    <motion.h1 initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .6 }}>Example</motion.h1>
-                    <motion.li initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .8 }}>3435</motion.li>
+                    <motion.h1 initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .3 }}>Example</motion.h1>
+                    <motion.li initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .4 }}>3435 = 3³ + 4⁴ + 3³ + 5⁵</motion.li>
                 </div>
                 <div className="mun_calculator">
-                    <motion.p initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: 1 }}>Insert a number!</motion.p>
-                    <motion.input type="text" placeholder="0" onChange={e => setMunArray(Array.from(String(e.target.value), Number))} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: 1.2 }} />
+                    <motion.p initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .5 }}>Insert a number!</motion.p>
+                    <motion.input type="text" placeholder="0" onChange={e => setMunArray(Array.from(String(e.target.value), Number))} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .6 }} />
                 </div>
                 <div className="mun_result">
                     {IsMun
                         ?
-                        <motion.h1 style={{ color: '#097969' }} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: 1.4 }}>It is a Munchausen Number!</motion.h1>
+                        <motion.h1 style={{ color: '#097969' }} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .7 }}>It is a Munchausen Number!</motion.h1>
                         :
-                        <motion.h1 style={{ color: '#c44d56' }} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: 1.6 }}>It isn't a Munchausen Number!</motion.h1>
+                        <motion.h1 style={{ color: '#c44d56' }} initial={{ opacity: 0, y: -10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: .7 }}>It isn't a Munchausen Number!</motion.h1>
                     }
                 </div>
             </div>
